@@ -58,8 +58,7 @@
       }
     }]
   },
-  "positionProfiles": [
-    {
+  "positionProfiles": [{
       "profileName": "Profile 1",
       "profileId": {
         "value": "PP-1000001",
