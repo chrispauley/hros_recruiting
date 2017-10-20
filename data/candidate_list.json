@@ -1,0 +1,11 @@
+[
+  { "formattedName": "Many Profiles",
+    "link": "data/candidate_manyprofiles.json"
+  },
+  { "formattedName": "Qualifications Profile",
+    "link": "data/candidate_profile_qualifications.json"
+  },
+  { "formattedName": "Noun Only",
+    "link": "data/candidate_noun_only.json"
+  }
+]
