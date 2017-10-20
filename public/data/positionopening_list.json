@@ -1,0 +1,11 @@
+[
+  { "formattedName": "PositionOpening_extended",
+    "link": "data/PositionOpening_extended.json"
+  },
+  { "formattedName": "Position with 2 Profiles",
+    "link": "data/PositionOpening_multiple-profiles-2.json"
+  },
+  { "formattedName": "Position with 3 Profiles",
+    "link": "/data/PositionOpening_multiple-profiles-3.json"
+  }
+]
