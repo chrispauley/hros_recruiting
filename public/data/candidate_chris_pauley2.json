@@ -1,0 +1,167 @@
+{
+  "documentId": {
+    "value": "001",
+    "schemeId": "hros_recruiting",
+    "schemeLink": "data/candidate_chris_pauley2.json"
+  },
+  "uri": "data/candidate_chris_pauley2.json",
+  "person": {
+    "id": {
+      "value": "001",
+      "schemeId": "hros_recruiting"
+    },
+    "name": {
+      "formattedName": "Chris Pauley",
+      "given": "Chris",
+      "family": "Pauley"
+    },
+    "communication": {
+      "phone": [{
+        "useCode": "private",
+        "preference": 1,
+        "formattedNumber": "+1 2677148647"
+      }],
+      "email": [{
+          "useCode": "private",
+          "preference": 1,
+          "address": "pauley.chris@gmail.com"
+        },
+        {
+          "useCode": "private",
+          "preference": 2,
+          "address": "pauleyc@yahoo.com"
+        }
+      ],
+      "web": [{
+          "name": "Linkedin",
+          "useCode": "business",
+          "url": "https://www.linkedin.com/in/christopherpauley"
+        },
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com/chrisp18938"
+        }
+      ],
+      "address": [
+          {
+              "useCode": "private",
+              "countryCode": "US",
+              "countrySubDivisions": [
+                  {
+                      "type": "state",
+                      "value": "PA"
+                  }
+              ],
+              "city": "New Hope",
+              "postalCode": "18938",
+              "line": "904 Filly Circle",
+              "geoLocation": {
+                  "longitude": -75.0256251,
+                  "latitude": 40.3445
+              },
+              "formattedAddress": "904 Filly Circle, New Hope, PA 18938"
+          }
+      ]
+    }
+  },
+  "profiles": [{
+    "id": { "value": "1" },
+    "profileName": "Default Profile",
+    "languageCode": "en",
+
+    "executiveSummary": "Get a job!",
+    "objective": "Fulfill my objectives.",
+
+    "certifications": [{
+      "id": { "value": "" },
+      "name": "React: Building Large Apps",
+      "type": {
+        "id": { "value": "" },
+        "name": "",
+        "code": ""
+      },
+      "status": "",
+      "effectiveTimePeriod": {
+        "validFrom": "2017-08"
+      },
+      "firstIssued": "2017-08",
+      "issuingAuthority": {
+        "id": { "value": "" },
+        "name": "Lynda",
+        "code": "",
+        "domainName": "lynda.com"
+      },
+      "attachmentReferences": [{
+        "reference": {
+          "value": "5D00E29209234D7087B10DFD007EEE40",
+          "schemeLink": "http://www.lynda.com/ViewCertificate/5D00E29209234D7087B10DFD007EEE40?utm_source=linkedin&utm_medium=sharing&utm_campaign=certificate"
+        },
+        "uri": "profiles[0].certifications[0]#"
+      }],
+      "descriptions": ["Topics include: Working with the Electrode and Electrify libraries, React project organization, State management with redux-saga, Testing with Jest, Mocha, and Chai, Continuous integration with Travis CI, SSR and caching optimization"]
+    }],
+
+    "employment": [
+      {
+        "id": { "value": "01"}, "start": "2008", "current": true, "descriptions": [""],
+
+        "organization": {
+          "id": {"value": ""}, "name": "Solebury Internet Marketing", "code": ""
+        },
+
+        "positionHistories": [
+            {
+                "title": "Owner",
+                "employmentPeriod": {
+                    "start": "2009-05",
+                    "current": true
+                },
+                "descriptions": [
+                    ""
+                ]
+            }
+        ]
+      },
+      {
+        "id": { "value": "02"}, "start": "2015", "current": true, "descriptions": [""],
+
+        "organization": {
+          "id": {"value": ""}, "name": "HR Open Standards", "code": ""
+        },
+
+        "positionHistories": [
+            {
+                "title": "JSON Schema Editor",
+                "employmentPeriod": {
+                    "start": "2015-01",
+                    "current": true
+                },
+                "descriptions": [
+                    "Assessments Workgroup JSON Schema Editor"
+                ]
+            },
+            {
+                "title": "Technical Steering Committee",
+                "employmentPeriod": {
+                    "start": "2015-02",
+                    "current": true
+                },
+                "descriptions": [
+                    "Define standards for the workgroups."
+                ]
+            },
+            {
+                "title": "Recruiting Workgroup Member",
+                "employmentPeriod": {
+                    "start": "2015-02",
+                    "current": true
+                },
+                "descriptions": [
+                    "Attend meetings to define use cases and schema definitions for recruiting workgroups."
+                ]
+            }
+        ]
+      }
+    ]
+  }]
+}

@@ -1,0 +1,169 @@
+{
+    "documentId": {
+        "value": "00348728",
+        "schemeId": "SomeVendorHris"
+    },
+    "language": "en-US",
+    "dataProtectionPolicy": {
+        "geoRestrictions": [
+            {
+                "country": "US",
+                "policy": "Full Control"
+            }
+        ],
+        "retentionDate": "2020-12-31"
+    },
+    "statusCode": "Active",
+    "approvalStatusCode": "Approved",
+    "approvalMessage": "Granted by controlling department.",
+    "postingRequester": {
+        "id": {
+            "value": "OID-124342",
+            "schemeId": "SomeVendorHris"
+        },
+        "name": "ACME R&D Headquarters",
+        "personContacts": [
+            {
+                "id": {
+                    "value": "PID-112233",
+                    "schemeId": "SomeVendorHris"
+                },
+                "name": {
+                    "given": "Geraldine",
+                    "family": "Thompson"
+                },
+                "primaryLanguage": "en-US",
+                "roleCode": "Hiring Manager",
+                "communication": {
+                    "email": [
+                        {
+                            "address": "geraldine.thompson@acme.com"
+                        }
+                    ],
+                    "address": [
+                        {
+                            "line": "",
+                            "city": "San Francisco",
+                            "country": "US"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "positionProfiles": [
+        {
+            "profileName": "Basic Profile",
+            "profileId": {
+                "value": "PP-1000000",
+                "schemeId": "SomeVendorHris"
+            },
+            "language": "en-US",
+            "postingInstructions": [
+                {
+                    "channelId": {
+                        "value": "homepage"
+                    },
+                    "start": "2017-01-08",
+                    "end": "2017-12-31",
+                    "applicationMethods": [
+                        {
+                            "applicationCloseDate": {
+                                "end": "2018-01-15"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "positionId": {
+                "value": "JOB-122334",
+                "schemeId": "SomeVendorAts"
+            },
+            "positionTitle": "Software Developer Java",
+            "positionLocation": [
+                {
+                    "name": "ACME R&D Headquarters",
+                    "line": "144 Townsend St",
+                    "city": "San Francisco",
+                    "postalCode": "CA 94107",
+                    "countryCode": "US",
+                    "countrySubDivisions": [
+                        {
+                            "type": "state",
+                            "value": "California"
+                        }
+                    ]
+                }
+            ],
+            "positionOrganization": {
+                "id": {
+                    "value": "OID-124342",
+                    "schemeId": "SomeVendorHris"
+                },
+                "name": "ACME R&D Headquarters"
+            },
+            "positionOpenQuantity": 2,
+            "jobCategories": [
+                {
+                    "id": {
+                        "value": "4",
+                        "schemeId": "SomeVendorHris"
+                    },
+                    "code": "Technicians"
+                }
+            ],
+            "careerLevels": [
+                {
+                    "id": {
+                        "value": "7",
+                        "schemeId": "SomeVendorHris"
+                    },
+                    "code": "MidCareer"
+                }
+            ],
+            "positionOfferingTypes": [
+                "DirectHire"
+            ],
+            "workingLanguages": [
+                {
+                    "name": "English",
+                    "code": "en-US"
+                }
+            ],
+            "positionPeriod": {
+                "start": "2018-01-01",
+                "end": "2022-12-31"
+            },
+            "immediateStartIndicator": true,
+            "positionScheduleTypeCodes": [
+                "FullTime"
+            ],
+            "offeredRemunerationPackage": {
+                "benefitsSummary": [
+                    "Standard contract including usage of company car."
+                ],
+                "validFrom": "2018-01-01",
+                "validTo": "2018-12-31",
+                "basisCode": "Salaried",
+                "ranges": [
+                    {
+                        "intervalCode": "Year",
+                        "referenceAmount": {
+                            "value": 100000,
+                            "currency": "USD"
+                        },
+                        "typeCode": "BasePay"
+                    },
+                    {
+                        "intervalCode": "Year",
+                        "referenceAmount": {
+                            "value": 5000,
+                            "currency": "USD"
+                        },
+                        "typeCode": "Bonus"
+                    }
+                ]
+            }
+        }
+    ]
+}
