@@ -7,5 +7,15 @@
   },
   { "formattedName": "Position with 3 Profiles",
     "link": "/data/PositionOpening_multiple-profiles-3.json"
+  },
+  { "formattedName": "MUZ-TEST-DeutscheBahn",
+    "link": "/data/PositionOpening_MUZ-TEST-DeutscheBahn-PFW70518JO004.json"
+  },
+  { "formattedName": "MUZ-TEST-Lufthansa",
+    "link": "/data/PositionOpening_MUZ-TEST-Lufthansa-P0722V004.json"
+  },
+  { "formattedName": "UC4-exchange-from-HRIS-to-ATS",
+    "link": "/data/PositionOpening_UC4-exchange-from-HRIS-to-ATS.json"
   }
+
 ]

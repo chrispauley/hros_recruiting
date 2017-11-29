@@ -1,11 +1,95 @@
-[
-  { "formattedName": "Many Profiles",
-    "link": "data/candidate_manyprofiles.json"
-  },
-  { "formattedName": "Qualifications Profile",
-    "link": "data/candidate_profile_qualifications.json"
-  },
-  { "formattedName": "Noun Only",
-    "link": "data/candidate_noun_only.json"
-  }
+[{
+        "id": 101001,
+        "formattedName": "chris_pauley",
+        "link": "data/candidate_chris_pauley.json"
+    }, {
+        "id": 101002,
+        "formattedName": "chris_pauley2",
+        "link": "data/candidate_chris_pauley2.json"
+    },
+    {
+        "id": 1,
+        "formattedName": "Many Profiles",
+        "link": "data/candidate_manyprofiles.json"
+    },
+    {
+        "id": 2,
+        "formattedName": "Qualifications Profile",
+        "link": "data/candidate_profile_qualifications.json"
+    },
+    {
+        "id": 3,
+        "formattedName": "Noun Only",
+        "link": "data/candidate_noun_only.json"
+    },
+    {
+        "id": 4,
+        "formattedName": "candidate_sample_01",
+        "link": "data/candidate_sample_01.json"
+    },
+    {
+        "id": 5,
+        "formattedName": "candidate_sample_02",
+        "link": "data/candidate_sample_02.json"
+    },
+    {
+        "id": 6,
+        "formattedName": "candidate_sample_03",
+        "link": "data/candidate_sample_03.json"
+    },
+    {
+        "id": 7,
+        "formattedName": "candidate_sample_04",
+        "link": "data/candidate_sample_01.json"
+    },
+    {
+        "id": 8,
+        "formattedName": "candidate_sample_05",
+        "link": "data/candidate_sample_02.json"
+    },
+    {
+        "id": 9,
+        "formattedName": "candidate_sample_06",
+        "link": "data/candidate_sample_03.json"
+    },
+    {
+        "id": 10,
+        "formattedName": "candidate_sample_07",
+        "link": "data/candidate_sample_03.json"
+    },
+    {
+        "id": 11,
+        "formattedName": "sample_08",
+        "link": "data/candidate_sample_01.json"
+    },
+    {
+        "id": 12,
+        "formattedName": "sample_09",
+        "link": "data/candidate_sample_02.json"
+    },
+    {
+        "id": 13,
+        "formattedName": "sample_10",
+        "link": "data/candidate_sample_03.json"
+    },
+    {
+        "id": 14,
+        "formattedName": "sample_11",
+        "link": "data/candidate_sample_01.json"
+    },
+    {
+        "id": 15,
+        "formattedName": "sample_12",
+        "link": "data/candidate_sample_02.json"
+    },
+    {
+        "id": 16,
+        "formattedName": "sample_13",
+        "link": "data/candidate_sample_03.json"
+    },
+    {
+        "id": 17,
+        "formattedName": "sample_14",
+        "link": "data/candidate_sample_03.json"
+    }
 ]

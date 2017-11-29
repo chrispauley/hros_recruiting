@@ -3,7 +3,7 @@ export default {
   "@context" : "http://schema.org",
   "@type" : "AboutPage",
 
-  "name": "CEDS Competencies - JSON Schema Version",
+  "name": "HROS Recruiting - JSON Instance Viewer",
   "about" : "",
   "description" : "",
   "license": "",
