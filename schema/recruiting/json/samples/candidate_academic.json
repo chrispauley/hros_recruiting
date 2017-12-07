@@ -1,0 +1,285 @@
+{
+    "documentId": {
+        "value": "Candidate062",
+        "schemeId": "SomeVendorAts"
+    },
+    "alternateIds": [
+        {
+            "value": "A-235674535",
+            "schemeId": "SomeOtherVendorAts"
+        }
+    ],
+    "uri": "https://hr-xml.org/lightweight_recruiting_example/getCandidate/61",
+    "person": {
+        "id": {
+            "value": "Candidate062",
+            "schemeAgencyId": "SomeVendor",
+            "schemeId": "SomeVendorAts",
+            "schemeVersionId": "5.0"
+        },
+        "name": {
+            "formattedName": "Lauren Hoffman",
+            "given": "Lauren",
+            "family": "Hoffman"
+        },
+        "communication": {
+            "phone": [
+                {
+                    "useCode": "private",
+                    "preference": 1,
+                    "formattedNumber": "+1 07956 654 32"
+                }
+            ],
+            "email": [
+                {
+                    "useCode": "private",
+                    "preference": 1,
+                    "address": "lauren.hoffman1978@gmail.com"
+                },
+                {
+                    "useCode": "business",
+                    "preference": 2,
+                    "address": "lauren.hoffman@big-research-u.edu"
+                }
+            ],
+            "web": [
+                {
+                    "name": "Linkedin",
+                    "useCode": "business",
+                    "url": "https://www.linkedin.com/in/laurenhoffman"
+                },
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/laurenhoffman"
+                }
+            ]
+        }
+    },
+    "profiles": [
+        {
+            "languageCode": "en-US",
+            "profileId": {
+                "value": "Candidate062-01",
+                "schemeId": "SomeVendorAts"
+            },
+            "profileName": "Main profile",
+            "objective": "Seeking academic research teaching opportunity.",
+            "executiveSummary": "Motivated and talented Sociology Professor driven to inspire students to pursue academic and personal excellence.",
+            "positionPreferences": [
+                {
+                    "careerLevelCodes": [ "ExperiencedNonManager" ]
+                }
+            ],
+            "employment": [
+                {
+                    "current": true,
+                    "start": "2014-06",
+                    "organization": {
+                        "name": "University of Pennsylvania",
+                        "domainName": "www.upenn.edu",
+                        "communication": {
+                            "address": [
+                                {
+                                    "city": "Philadlephia",
+                                    "countrySubdivisions": [
+                                        {
+                                            "type": "State",
+                                            "value": "PA"
+                                        }
+                                    ],
+                                    "countryCode": "US"
+                                }
+                            ]
+                        }
+                    },
+                    "positionHistories": [
+                        {
+                            "current": true,
+                            "start": "2014-06",
+                            "title": "Professor of Sociology",
+                            "descriptions": [ "Taught students.", "Conducted sociology research." ]
+                        }
+                    ],
+                    "id": { "value": "500212" }
+                }
+            ],
+            "education": [
+                {
+                    "id": {
+                        "value": "EDUHIST1"
+                    },
+                    "institution": {
+                        "name": "Martin Luther King High School",
+                        "communication": {
+                            "address": [
+                                {
+                                    "countryCode": "US",
+                                    "countrySubDivisions": [
+                                        {
+                                            "type": "state",
+                                            "value": "PA"
+                                        }
+                                    ],
+                                    "city": "Philadelphia",
+                                    "postalCode": "19138",
+                                    "line": "6100 Stenton Ave"
+                                }
+                            ]
+                        }
+                    },
+                    "iscedEducationLevelCode": "3",
+                    "attendancePeriods": [
+                        {
+                            "start": "1988-06",
+                            "end": "1996-05"
+                        }
+                    ]
+                },
+                {
+                    "id": {
+                        "value": "EDUHIST2"
+                    },
+                    "institution": {
+                        "name": "Yale University"
+                    },
+                    "department": {
+                        "name": "Department of Psychology",
+                        "communication": {
+                            "address": [
+                                {
+                                    "countryCode": "US",
+                                    "countrySubDivisions": [
+                                        {
+                                            "type": "state",
+                                            "value": "CT"
+                                        }
+                                    ],
+                                    "city": "New Haven",
+                                    "postalCode": "06511",
+                                    "line": "51 Prospect St"
+                                }
+                            ]
+                        }
+                    },
+                    "programs": [
+                        "Sociology",
+                        "Linguistics"
+                    ],
+                    "educationLevelCodes": [
+                        {
+                            "id": {
+                                "value": "",
+                                "schemeId": ""
+                            },
+                            "name": ""
+                        }
+                    ],
+                    "iscedEducationLevelCode": "6",
+                    "attendancePeriods": [
+                        {
+                            "start": "1996-10",
+                            "end": "1999-05"
+                        }
+                    ],
+                    "educationDegrees": [
+                        {
+                            "id": {
+                                "value": ""
+                            },
+                            "name": "Bachelor",
+                            "codes": [ "Bachelor" ],
+                            "date": "1999-05-15",
+                            "score": {
+                                "scoresNumeric": [
+                                    {
+                                        "value": 88,
+                                        "minimum": 0,
+                                        "maximum": 100,
+                                        "scoreCore": "Percentage"
+                                    }
+                                ]
+                            },
+                            "iscedEducationLevelCode": "6",
+                            "specializations": [
+                                {
+                                    "name": "Clinical Psychology",
+                                    "type": "major"
+                                },
+                                {
+                                    "name": "Linguistics",
+                                    "type": "minor"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "licenses": [ ],
+            "qualifications": [ ],
+            "publications": [
+                {
+                    "type": "Article",
+                    "journal": "Sociology of Education",
+                    "date": "2004-10",
+                    "title": "When Race Matters: Teachers' Evaluations of Students' Classroom Behavior",
+                    "abstract": "Past studies have noted that black students/' classroom behavior is rated more favorably by black teachers than by white teachers.",
+                    "contributors": [
+                        {
+                            "name": "Douglas B. Downey",
+                            "role": "author"
+                        },
+                        {
+                            "name": "Shana Pribesh",
+                            "role": "author"
+                        }
+                    ],
+                    "comments": [
+                        {
+                            "note": "This article was a random example of a journal article found on the Internet for this profile.",
+                            "author": "Chris Pauley",
+                            "type": "example comment"
+                        }
+                    ]
+                },
+                {
+                    "type": "Book",
+                    "title": "Sociology: Exploring the Architecture of Everyday Life",
+                    "date": "2015-01-22",
+                    "publisher": "Sage Publications",
+                    "isbn": "9781506305455",
+                    "pages": "569",
+                    "copyrights": [
+                        {
+                            "owner": "Sage Publications",
+                            "year": "2015"
+                        }
+                    ]
+                },
+                {
+                    "type": "Conference",
+                    "title": "Amazing Insights in Human Behavior",
+                    "date": "2010-04-26",
+                    "event": {
+                        "name": "Human Behavior Discoveries Conference",
+                        "venue": "Spectrum",
+                        "location": { "city": "Philadelphia" }
+                    }
+                },
+                {
+                    "type": "Thesis",
+                    "title": "Abstract Insights in Human Behavior is Amazing",
+                    "pages": "158",
+                    "date": "2009-11-03",
+                    "abstract": "Very abstract.",
+                    "comments": [
+                        {
+                            "note": "Indeed, very abstract.",
+                            "author": "Professor Plum",
+                            "datetime": "2009-11-01"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

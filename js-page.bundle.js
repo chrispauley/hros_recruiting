@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 86);
+/******/ 	return __webpack_require__(__webpack_require__.s = 97);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -686,8 +686,7 @@ var ExecutionEnvironment = {
 module.exports = ExecutionEnvironment;
 
 /***/ }),
-/* 10 */,
-/* 11 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -768,7 +767,7 @@ module.exports = EventListener;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 12 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -839,7 +838,7 @@ function shallowEqual(objA, objB) {
 module.exports = shallowEqual;
 
 /***/ }),
-/* 13 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -882,7 +881,7 @@ function containsNode(outerNode, innerNode) {
 module.exports = containsNode;
 
 /***/ }),
-/* 14 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -912,7 +911,7 @@ function focusNode(node) {
 module.exports = focusNode;
 
 /***/ }),
-/* 15 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -954,6 +953,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 module.exports = getActiveElement;
 
 /***/ }),
+/* 15 */,
 /* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2815,7 +2815,7 @@ if (process.env.NODE_ENV === 'production') {
  LICENSE file in the root directory of this source tree.
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(0);__webpack_require__(3);var l=__webpack_require__(9),n=__webpack_require__(4),ba=__webpack_require__(11),ca=__webpack_require__(2),da=__webpack_require__(5),ea=__webpack_require__(12),fa=__webpack_require__(13),ha=__webpack_require__(14),ia=__webpack_require__(15);
+var aa=__webpack_require__(0);__webpack_require__(3);var l=__webpack_require__(9),n=__webpack_require__(4),ba=__webpack_require__(10),ca=__webpack_require__(2),da=__webpack_require__(5),ea=__webpack_require__(11),fa=__webpack_require__(12),ha=__webpack_require__(13),ia=__webpack_require__(14);
 function w(a){for(var b=arguments.length-1,c="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,d=0;d<b;d++)c+="\x26args[]\x3d"+encodeURIComponent(arguments[d+1]);b=Error(c+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}aa?void 0:w("227");
 function ja(a){switch(a){case "svg":return"http://www.w3.org/2000/svg";case "math":return"http://www.w3.org/1998/Math/MathML";default:return"http://www.w3.org/1999/xhtml"}}
 var ka={Namespaces:{html:"http://www.w3.org/1999/xhtml",mathml:"http://www.w3.org/1998/Math/MathML",svg:"http://www.w3.org/2000/svg"},getIntrinsicNamespace:ja,getChildNamespace:function(a,b){return null==a||"http://www.w3.org/1999/xhtml"===a?ja(b):"http://www.w3.org/2000/svg"===a&&"foreignObject"===b?"http://www.w3.org/1999/xhtml":a}},la=null,oa={};
@@ -3144,7 +3144,7 @@ var react = __webpack_require__(0);
 var invariant = __webpack_require__(3);
 var ExecutionEnvironment = __webpack_require__(9);
 var _assign = __webpack_require__(4);
-var EventListener = __webpack_require__(11);
+var EventListener = __webpack_require__(10);
 var require$$0 = __webpack_require__(6);
 var hyphenateStyleName = __webpack_require__(25);
 var emptyFunction = __webpack_require__(2);
@@ -3153,10 +3153,10 @@ var performanceNow = __webpack_require__(29);
 var propTypes = __webpack_require__(16);
 var emptyObject = __webpack_require__(5);
 var checkPropTypes = __webpack_require__(7);
-var shallowEqual = __webpack_require__(12);
-var containsNode = __webpack_require__(13);
-var focusNode = __webpack_require__(14);
-var getActiveElement = __webpack_require__(15);
+var shallowEqual = __webpack_require__(11);
+var containsNode = __webpack_require__(12);
+var focusNode = __webpack_require__(13);
+var getActiveElement = __webpack_require__(14);
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
@@ -21213,13 +21213,13 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 //import { IndexLink, Link } from 'react-router';
 
 
-var Nav = function (_React$Component) {
-    _inherits(Nav, _React$Component);
+var SiteNav = function (_React$Component) {
+    _inherits(SiteNav, _React$Component);
 
-    function Nav(props) {
-        _classCallCheck(this, Nav);
+    function SiteNav(props) {
+        _classCallCheck(this, SiteNav);
 
-        var _this = _possibleConstructorReturn(this, (Nav.__proto__ || Object.getPrototypeOf(Nav)).call(this, props));
+        var _this = _possibleConstructorReturn(this, (SiteNav.__proto__ || Object.getPrototypeOf(SiteNav)).call(this, props));
 
         _this.state = {
             collapsed: true,
@@ -21228,7 +21228,7 @@ var Nav = function (_React$Component) {
         return _this;
     }
 
-    _createClass(Nav, [{
+    _createClass(SiteNav, [{
         key: 'toggleCollapse',
         value: function toggleCollapse() {
             var collapsed = !this.state.collapsed;
@@ -21283,6 +21283,24 @@ var Nav = function (_React$Component) {
                                     { className: 'nav-link', href: 'positionopening.html' },
                                     'Position Opening'
                                 )
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                { className: 'nav-item' },
+                                _react2.default.createElement(
+                                    'a',
+                                    { className: 'nav-link', href: 'jschemaframe.html' },
+                                    'JSchema'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                { className: 'nav-item' },
+                                _react2.default.createElement(
+                                    'a',
+                                    { className: 'nav-link', href: 'schemaviewer.html' },
+                                    'Schema Viewer'
+                                )
                             )
                         ),
                         _react2.default.createElement(
@@ -21313,10 +21331,10 @@ var Nav = function (_React$Component) {
         }
     }]);
 
-    return Nav;
+    return SiteNav;
 }(_react2.default.Component);
 
-exports.default = Nav;
+exports.default = SiteNav;
 
 /***/ }),
 /* 34 */,
@@ -21371,7 +21389,18 @@ exports.default = Nav;
 /* 83 */,
 /* 84 */,
 /* 85 */,
-/* 86 */
+/* 86 */,
+/* 87 */,
+/* 88 */,
+/* 89 */,
+/* 90 */,
+/* 91 */,
+/* 92 */,
+/* 93 */,
+/* 94 */,
+/* 95 */,
+/* 96 */,
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21385,15 +21414,15 @@ var _reactDom = __webpack_require__(20);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _Nav = __webpack_require__(33);
+var _SiteNav = __webpack_require__(33);
 
-var _Nav2 = _interopRequireDefault(_Nav);
+var _SiteNav2 = _interopRequireDefault(_SiteNav);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var jwtPayload = { "name": "Chris Pauley" };
 
-_reactDom2.default.render(_react2.default.createElement(_Nav2.default, { name: jwtPayload.name }), document.querySelector('#top-nav'));
+_reactDom2.default.render(_react2.default.createElement(_SiteNav2.default, { name: jwtPayload.name }), document.querySelector('#top-nav'));
 // ReactDOM.render (<CandidateLocalData />, document.querySelector('main'));
 
 /***/ })

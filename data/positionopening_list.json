@@ -1,21 +1,24 @@
 [
-  { "formattedName": "PositionOpening_extended",
-    "link": "data/PositionOpening_extended.json"
+  { "displayName": "PositionOpening_extended",
+    "publicPath": "data/PositionOpening_extended.json"
   },
-  { "formattedName": "Position with 2 Profiles",
-    "link": "data/PositionOpening_multiple-profiles-2.json"
+  { "displayName": "Position with 2 Profiles",
+    "publicPath": "data/PositionOpening_multiple-profiles-2.json"
   },
-  { "formattedName": "Position with 3 Profiles",
-    "link": "/data/PositionOpening_multiple-profiles-3.json"
+  { "displayName": "Position with 3 Profiles",
+    "publicPath": "/data/PositionOpening_multiple-profiles-3.json"
   },
-  { "formattedName": "MUZ-TEST-DeutscheBahn",
-    "link": "/data/PositionOpening_MUZ-TEST-DeutscheBahn-PFW70518JO004.json"
+  { "displayName": "MUZ-TEST-DeutscheBahn",
+    "publicPath": "/data/PositionOpening_MUZ-TEST-DeutscheBahn-PFW70518JO004.json"
   },
-  { "formattedName": "MUZ-TEST-Lufthansa",
-    "link": "/data/PositionOpening_MUZ-TEST-Lufthansa-P0722V004.json"
+  { "displayName": "MUZ-TEST-Lufthansa",
+    "publicPath": "/data/PositionOpening_MUZ-TEST-Lufthansa-P0722V004.json"
   },
-  { "formattedName": "UC4-exchange-from-HRIS-to-ATS",
-    "link": "/data/PositionOpening_UC4-exchange-from-HRIS-to-ATS.json"
+  { "displayName": "UC4-exchange-from-HRIS-to-ATS",
+    "publicPath": "/data/PositionOpening_UC4-exchange-from-HRIS-to-ATS.json"
+  },
+  { "displayName": "UC6_HRIS_to_LMS",
+    "publicPath": "/data/PositionOpening_UC6_HRIS_to_LMS.json"
   }
 
 ]

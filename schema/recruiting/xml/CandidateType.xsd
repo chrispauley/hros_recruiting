@@ -1,0 +1,1144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:hros="http://hropenstandards.org/xml/" targetNamespace="http://hropenstandards.org/xml/" version="4.0.1" id="CandidateType" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation="../../common/xml/complex/CommentType.xsd" />
+  <xs:include schemaLocation="../../common/xml/codelist/PositionTypeCodeList.xsd" />
+  <xs:include schemaLocation="../../common/xml/base/IdentifierType.xsd" />
+  <xs:include schemaLocation="../../common/xml/base/MeasureType.xsd" />
+  <xs:include schemaLocation="../../common/xml/base/IndicatorType.xsd" />
+  <xs:include schemaLocation="../../common/xml/base/PercentType.xsd" />
+  <xs:include schemaLocation="../../common/xml/vcard/CommunicationType.xsd" />
+  <xs:include schemaLocation="../../common/xml/history/EducationHistoryType.xsd" />
+  <xs:include schemaLocation="../../common/xml/base/AttachmentType.xsd" />
+  <xs:include schemaLocation="../../common/xml/base/EntityType.xsd" />
+  <xs:include schemaLocation="../../common/xml/vcard/LocationType.xsd" />
+  <xs:include schemaLocation="../../common/xml/vcard/AddressType.xsd" />
+  <xs:include schemaLocation="../../common/xml/codelist/PositionScheduleTypeCodeList.xsd" />
+  <xs:include schemaLocation="../../common/xml/codelist/CareerLevelCodeList.xsd" />
+  <xs:include schemaLocation="../../common/xml/person/PersonNameType.xsd" />
+  <xs:include schemaLocation="../../common/xml/person/PersonPhysical.xsd" />
+  <xs:include schemaLocation="../../common/xml/complex/RemunerationRangeType.xsd" />
+  <xs:include schemaLocation="codelist/PublicationTypeCodeList.xsd" />
+  <xs:include schemaLocation="../../common/xml/base/YearType.xsd" />
+  <xs:include schemaLocation="../../common/xml/base/FormattedDateTimeType.xsd" />
+  <xs:include schemaLocation="../../common/xml/base/StringTypeArray.xsd" />
+  <xs:include schemaLocation="../../common/xml/codelist/LanguageCodeList.xsd" />
+  <xs:include schemaLocation="../../common/xml/history/EmploymentHistoryType.xsd" />
+  <xs:include schemaLocation="codelist/AffiliatedOrganizationTypeCodeList.xsd" />
+  <xs:include schemaLocation="../../common/xml/vcard/OrganizationType.xsd" />
+  <xs:include schemaLocation="../../common/xml/base/DurationType.xsd" />
+  <xs:include schemaLocation="../../common/xml/history/MilitaryHistoryType.xsd" />
+  <xs:include schemaLocation="../../common/xml/base/AttachmentReferenceType.xsd" />
+  <xs:include schemaLocation="../../common/xml/vcard/CertificationType.xsd" />
+  <xs:include schemaLocation="../../common/xml/person/PersonBaseType.xsd" />
+  <xs:include schemaLocation="../../common/xml/person/PersonLegal.xsd" />
+  <xs:include schemaLocation="../../common/xml/base/DateType.xsd" />
+  <xs:include schemaLocation="codelist/PatentStatusCodeList.xsd" />
+  <xs:include schemaLocation="codelist/RelationshipTypeCodeList.xsd" />
+  <xs:include schemaLocation="../../common/xml/vcard/LicenseType.xsd" />
+  <xs:complexType name="CandidatePersonType">
+    <xs:annotation>
+      <xs:documentation>A collection of demographic and personal data about a candidate -- a person being considered for, or who has otherwise been associated with, a position opening or resource requirement.</xs:documentation>
+    </xs:annotation>
+    <xs:all>
+      <xs:element minOccurs="0" maxOccurs="1" name="legalId" type="hros:IdentifierType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="birthDate" type="hros:DateType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="gender" type="hros:GenderCodeList" />
+      <xs:element minOccurs="0" maxOccurs="1" name="citizenship">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="hros:CountryCodeList" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="residenceCountry">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="hros:CountryCodeList" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="militaryStatus">
+        <xs:simpleType>
+          <xs:restriction base="xs:string" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="ethnicity">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item">
+              <xs:simpleType>
+                <xs:restriction base="xs:string" />
+              </xs:simpleType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="id" type="hros:IdentifierType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="name" type="hros:PersonNameType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="communication" type="hros:CommunicationType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="primaryLanguage" type="hros:LanguageCodeList" />
+      <xs:element minOccurs="0" maxOccurs="1" name="height" type="hros:MeasureType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="weight" type="hros:MeasureType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="disability" type="hros:DisabilityType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="tobaccoUser">
+        <xs:simpleType>
+          <xs:restriction base="xs:boolean" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="hairColor">
+        <xs:simpleType>
+          <xs:restriction base="xs:string" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="eyeColor">
+        <xs:simpleType>
+          <xs:restriction base="xs:string" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="identifyingMarks" type="hros:StringTypeArray" />
+      <xs:element minOccurs="0" maxOccurs="1" name="age">
+        <xs:simpleType>
+          <xs:restriction base="xs:integer" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="bloodType" type="hros:CodeType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="passportId" type="hros:IdentifierType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="fatherName">
+        <xs:simpleType>
+          <xs:restriction base="xs:string" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="motherName">
+        <xs:simpleType>
+          <xs:restriction base="xs:string" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="race">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item">
+              <xs:simpleType>
+                <xs:restriction base="xs:string" />
+              </xs:simpleType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="birthPlace">
+        <xs:simpleType>
+          <xs:restriction base="xs:string" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="deathDate" type="hros:DateTimeType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="nationality">
+        <xs:simpleType>
+          <xs:restriction base="xs:string" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="maritalStatus">
+        <xs:simpleType>
+          <xs:restriction base="xs:string" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="visa">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item">
+              <xs:complexType>
+                <xs:all />
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="religion">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item">
+              <xs:simpleType>
+                <xs:restriction base="xs:string" />
+              </xs:simpleType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="studentType" type="hros:CodeType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="studentIndicator" type="hros:IndicatorType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="studentStatus" type="hros:CodeType" />
+    </xs:all>
+  </xs:complexType>
+  <xs:complexType name="CandidateProfileType">
+    <xs:annotation>
+      <xs:documentation>Contains structured information about a candidate, including information about their past experiences (Work History, Education History, etc). This information can be used for evaluation or submission of candidacy for a position opening or resource requirement.</xs:documentation>
+    </xs:annotation>
+    <xs:all>
+      <xs:element minOccurs="0" maxOccurs="1" name="languageCode" type="hros:LanguageCodeList">
+        <xs:annotation>
+          <xs:documentation>The primary language of the content of the profile.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="id" type="hros:IdentifierType">
+        <xs:annotation>
+          <xs:documentation>The primary identifier of the candidate profile. This should be the identifier assigned by the owner of the data.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="alternateIds">
+        <xs:complexType>
+          <xs:annotation>
+            <xs:documentation>An array of other identifiers for the candidate profile. These may be identifiers assigned by other trading partners or third party systems.</xs:documentation>
+          </xs:annotation>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="hros:IdentifierType" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="profileName">
+        <xs:simpleType>
+          <xs:annotation>
+            <xs:documentation>The name given to the profile.</xs:documentation>
+          </xs:annotation>
+          <xs:restriction base="xs:string" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="personAvailability" type="hros:PersonAvailabilityType">
+        <xs:annotation>
+          <xs:documentation>The availability of this profile to be considerd for work assignments.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="processingInformation">
+        <xs:simpleType>
+          <xs:annotation>
+            <xs:documentation>Instructions to a third party on how this profile should be processed.</xs:documentation>
+          </xs:annotation>
+          <xs:restriction base="xs:string" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="distributionGuidelines" type="hros:DistributionGuidelinesType">
+        <xs:annotation>
+          <xs:documentation>Instructions on how this profile should be distributed to third parties.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="associatedPositionOpenings">
+        <xs:complexType>
+          <xs:annotation>
+            <xs:documentation>The positions in which this candidate is associated. This could be due to application or source activities.</xs:documentation>
+          </xs:annotation>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="hros:AssociatedPositionOpeningType" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="objective">
+        <xs:simpleType>
+          <xs:annotation>
+            <xs:documentation>The objective of the candidate in finding appropriate employment. A brief statement on career and position goals.</xs:documentation>
+          </xs:annotation>
+          <xs:restriction base="xs:string" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="executiveSummary">
+        <xs:simpleType>
+          <xs:annotation>
+            <xs:documentation>A concice section describing the experience of the candidate, or an introduction to the candidate.</xs:documentation>
+          </xs:annotation>
+          <xs:restriction base="xs:string" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="employerPreferences">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="hros:EmployerPreferenceType" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="positionPreferences">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="hros:PositionPreferenceType" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="employmentHistory" type="hros:EmploymentHistoryType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="educationHistory" type="hros:EducationHistoryType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="licenses">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="hros:LicenseType" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="certifications">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="hros:CertificationType" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="militaryHistory" type="hros:MilitaryHistoryType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="patents">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="hros:PatentType" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="publications">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="hros:PublicationType" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="organizationAffiliations">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="hros:OrganizationAffiliationType" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="employmentReferences">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="hros:RefereeType" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="attachments">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="hros:AttachmentType" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+  <xs:complexType name="PersonAvailabilityType">
+    <xs:annotation>
+      <xs:documentation>Details about when a person is available for work engagements.</xs:documentation>
+    </xs:annotation>
+    <xs:all>
+      <xs:element minOccurs="0" maxOccurs="1" name="availabilityDates">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="hros:AvailabilityDatesType" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="noticePeriodMeasure" type="hros:MeasureType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="immediateStartIndicator" type="hros:IndicatorType" />
+    </xs:all>
+  </xs:complexType>
+  <xs:complexType name="AvailabilityDatesType">
+    <xs:annotation>
+      <xs:documentation>The dates of availability for work engagements.</xs:documentation>
+    </xs:annotation>
+    <xs:all>
+      <xs:element minOccurs="0" maxOccurs="1" name="startDateTime" type="hros:FormattedDateTimeType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="endDateTime" type="hros:FormattedDateTimeType" />
+    </xs:all>
+  </xs:complexType>
+  <xs:complexType name="DistributionGuidelinesType">
+    <xs:annotation>
+      <xs:documentation>The rules for dispersing information contained in the object to a person or organization.</xs:documentation>
+    </xs:annotation>
+    <xs:all>
+      <xs:element minOccurs="0" maxOccurs="1" name="doNotRedistributeIndicator" type="hros:IndicatorType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="distributeTo">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="hros:DistributeToType" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="doNotDistributeTo">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="hros:DoNotDistributeToType" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+  <xs:complexType name="DoNotDistributeToType">
+    <xs:annotation>
+      <xs:documentation>The person or organization to which the objects should not be delivered (excluded), including the effective dates to this exclusion.</xs:documentation>
+    </xs:annotation>
+    <xs:all>
+      <xs:element minOccurs="0" maxOccurs="1" name="startDate" type="hros:FormattedDateTimeType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="endDate" type="hros:FormattedDateTimeType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="duration" type="hros:DurationType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="person" type="hros:EntityType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="organization" type="hros:OrganizationType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="communication" type="hros:CommunicationType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="descriptions" type="hros:StringTypeArray" />
+    </xs:all>
+  </xs:complexType>
+  <xs:complexType name="DistributeToType">
+    <xs:annotation>
+      <xs:documentation>The person or organization to which the objects should be delivered, and the effective dates of this distribution.</xs:documentation>
+    </xs:annotation>
+    <xs:all>
+      <xs:element minOccurs="0" maxOccurs="1" name="startDate" type="hros:FormattedDateTimeType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="endDate" type="hros:FormattedDateTimeType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="duration" type="hros:DurationType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="person" type="hros:EntityType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="organization" type="hros:OrganizationType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="communication" type="hros:CommunicationType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="descriptions" type="hros:StringTypeArray" />
+    </xs:all>
+  </xs:complexType>
+  <xs:complexType name="AssociatedPositionOpeningType">
+    <xs:annotation>
+      <xs:documentation>Contains details answering the questions: 1. What, if any, are the positions openings with which is the Candidate associated? 2. How did the Candidate become associated with those positions? The positionOpeningId, positiontitle, and positionUri components address the first question. The searchCriteria, searchResult, and candidateAppliedIndicator address the second question. All elements are optional.  In general, a candidate becomes associated with a position by applying to be considered for the position or by having been sourced and matched to the opening through some manner of automated and/or human-initiated recruiting or research process.</xs:documentation>
+    </xs:annotation>
+    <xs:all>
+      <xs:element minOccurs="0" maxOccurs="1" name="positionOpeningId" type="hros:IdentifierType">
+        <xs:annotation>
+          <xs:documentation>An identifier to a related position opening (related to recruiting for a job).</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="staffingOrderId" type="hros:IdentifierType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="positionTitle">
+        <xs:simpleType>
+          <xs:annotation>
+            <xs:documentation>A short phrase describing the position as it would be listed on a business card or in a company directory. OED: An appellation attaching to a position in virtue of rank, function or office.</xs:documentation>
+          </xs:annotation>
+          <xs:restriction base="xs:string" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="positionUri">
+        <xs:simpleType>
+          <xs:annotation>
+            <xs:documentation>A Uniform Resource Identifier to the associated position opening. This is often a web page or HTTP URL.</xs:documentation>
+          </xs:annotation>
+          <xs:restriction base="xs:anyURI" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="searchCriteria">
+        <xs:complexType>
+          <xs:annotation>
+            <xs:documentation>The associated search criteria used by the candidate or recruiter to match this candidate to the associated position opening.</xs:documentation>
+          </xs:annotation>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="hros:SearchCriterionType" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="searchResult" type="hros:SearchResultType">
+        <xs:annotation>
+          <xs:documentation>The associated search result matching the criteria used by the candidate or recruiter to match this candidate to the associated position opening. Typically this would help to explain why the candidate was matched to the job.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="candidateAppliedIndicator" type="hros:IndicatorType">
+        <xs:annotation>
+          <xs:documentation>An indicator that the candidate applied to this associated position.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+  <xs:complexType name="SearchCriterionType">
+    <xs:annotation>
+      <xs:documentation>OLD DESCRIPTION: Actual search criteria, TODO: preliminary definition</xs:documentation>
+    </xs:annotation>
+    <xs:all>
+      <xs:element minOccurs="1" maxOccurs="1" name="criterionName">
+        <xs:simpleType>
+          <xs:annotation>
+            <xs:documentation>Name/key of search criterion</xs:documentation>
+          </xs:annotation>
+          <xs:restriction base="xs:string" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="criterionValues" type="hros:StringTypeArray">
+        <xs:annotation>
+          <xs:documentation>(allowed) Values of search criterion</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="weight" />
+      <xs:element minOccurs="0" maxOccurs="1" name="comparativeOperator">
+        <xs:simpleType>
+          <xs:annotation>
+            <xs:documentation>Additional comparative operator - related to the criterion value; if not set: 'EqualTo' is assumed by default</xs:documentation>
+          </xs:annotation>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="EqualTo" />
+            <xs:enumeration value="LessThanOrEqualTo" />
+            <xs:enumeration value="GreaterThanOrEqualTo" />
+            <xs:enumeration value="LessThan" />
+            <xs:enumeration value="GreaterThan" />
+            <xs:enumeration value="NotEqualTo" />
+            <xs:enumeration value="NotLessThan" />
+            <xs:enumeration value="NotGreaterThan" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="searchString">
+        <xs:simpleType>
+          <xs:annotation>
+            <xs:documentation>Search string for text/fulltext search</xs:documentation>
+          </xs:annotation>
+          <xs:restriction base="xs:string" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="searchContext">
+        <xs:simpleType>
+          <xs:annotation>
+            <xs:documentation>Search context for text/fulltext search</xs:documentation>
+          </xs:annotation>
+          <xs:restriction base="xs:string" />
+        </xs:simpleType>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+  <xs:complexType name="SearchResultType">
+    <xs:annotation>
+      <xs:documentation>OLD DESCRIPTION: Actual search result, TODO: preliminary definition</xs:documentation>
+    </xs:annotation>
+    <xs:all>
+      <xs:element minOccurs="0" maxOccurs="1" name="count">
+        <xs:simpleType>
+          <xs:annotation>
+            <xs:documentation>OLD DESCRIPTION: Number of items in current result set</xs:documentation>
+          </xs:annotation>
+          <xs:restriction base="xs:decimal" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="countAll">
+        <xs:simpleType>
+          <xs:annotation>
+            <xs:documentation>OLD DESCRIPTION: Number of all items matching current search criteria (not necessarily part of current result set)</xs:documentation>
+          </xs:annotation>
+          <xs:restriction base="xs:decimal" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="searchResultItems">
+        <xs:complexType>
+          <xs:annotation>
+            <xs:documentation>OLD DESCRIPTION: Array of all items of current result set</xs:documentation>
+          </xs:annotation>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item">
+              <xs:complexType>
+                <xs:all>
+                  <xs:element minOccurs="1" maxOccurs="1" name="matchedObjectId">
+                    <xs:simpleType>
+                      <xs:annotation>
+                        <xs:documentation>OLD DESCRIPTION: (mostly unique) Identifier of result item</xs:documentation>
+                      </xs:annotation>
+                      <xs:restriction base="xs:string" />
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element minOccurs="0" maxOccurs="1" name="matchedObjectDescriptor">
+                    <xs:complexType>
+                      <xs:annotation>
+                        <xs:documentation />
+                      </xs:annotation>
+                      <xs:all />
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element minOccurs="0" maxOccurs="1" name="relevanceScore" />
+                  <xs:element minOccurs="0" maxOccurs="1" name="relevanceRank">
+                    <xs:simpleType>
+                      <xs:annotation>
+                        <xs:documentation>OLD DESCRIPTION: (overall) Rank according to 'relevanceScore'</xs:documentation>
+                      </xs:annotation>
+                      <xs:restriction base="xs:decimal" />
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:all>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+  <xs:complexType name="EmployerPreferenceType">
+    <xs:annotation>
+      <xs:documentation>Contains a collection of information about a candidate's preferences in an ideal employer or company.</xs:documentation>
+    </xs:annotation>
+    <xs:all>
+      <xs:element minOccurs="0" maxOccurs="1" name="organizationNames" type="hros:StringTypeArray">
+        <xs:annotation>
+          <xs:documentation>A list of organization names which are preferred to the candidate.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="organizationTypes" type="hros:StringTypeArray">
+        <xs:annotation>
+          <xs:documentation>A list of organization types (such as public, non-profit) which are preferred to the candidate.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="industryCodes">
+        <xs:complexType>
+          <xs:annotation>
+            <xs:documentation>A list of industry codes which are preferred to the candidate.</xs:documentation>
+          </xs:annotation>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="hros:IdentifierType" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="headcountRange">
+        <xs:complexType>
+          <xs:annotation>
+            <xs:documentation>A measure of size of a company based the number of employees (headcount). This range is inclusive of the minimum and maximum number.</xs:documentation>
+          </xs:annotation>
+          <xs:all>
+            <xs:element minOccurs="0" maxOccurs="1" name="minimum">
+              <xs:simpleType>
+                <xs:restriction base="xs:decimal" />
+              </xs:simpleType>
+            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="1" name="maximum">
+              <xs:simpleType>
+                <xs:restriction base="xs:decimal" />
+              </xs:simpleType>
+            </xs:element>
+          </xs:all>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="descriptions" type="hros:StringTypeArray">
+        <xs:annotation>
+          <xs:documentation>A list of text descriptions of the candidate preferences for an employer.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+  <xs:complexType name="PositionPreferenceType">
+    <xs:annotation>
+      <xs:documentation>Contains a collection of information about a candidate's preferences in an ideal position or role.</xs:documentation>
+    </xs:annotation>
+    <xs:all>
+      <xs:element minOccurs="0" maxOccurs="1" name="locations">
+        <xs:complexType>
+          <xs:annotation>
+            <xs:documentation>A list of locations which are preferred to the candidate.</xs:documentation>
+          </xs:annotation>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="hros:PreferredLocationType" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="jobCategories">
+        <xs:complexType>
+          <xs:annotation>
+            <xs:documentation>A list of job categories which are preferred to the candidate.</xs:documentation>
+          </xs:annotation>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="hros:EntityType" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="positionTitles" type="hros:StringTypeArray">
+        <xs:annotation>
+          <xs:documentation>A list of position titles which are preferred to the candidate.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="positionOfferingTypeCodes">
+        <xs:complexType>
+          <xs:annotation>
+            <xs:documentation>These are values that are descriptive in classifying a position within advertising or communications of a position opportunity or offering. Note that these classifications are useful within advertising, but they are not precise classes useful internally to drive pay, benefits, and HR compliance. This is a enumerated list.</xs:documentation>
+          </xs:annotation>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="hros:PositionTypeCodeList" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="positionScheduleTypeCodes">
+        <xs:complexType>
+          <xs:annotation>
+            <xs:documentation>Values that classify the working schedule of a position offered or a position sought. Essentialy, whether a position offered or sought is full-time or part-time or has provision for flexible scheduling. Intended to classify schedule position preferences of a candidate or conversely employer preferences or requirements related to candidates with respect to an advertised position. Used in the context of matching candidates to positions. This is an enumerated list.</xs:documentation>
+          </xs:annotation>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="hros:PositionScheduleTypeCodeList" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="shiftDescriptions" type="hros:StringTypeArray">
+        <xs:annotation>
+          <xs:documentation>A list of shifts which are preferred to the candidate.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="careerLevelCodes">
+        <xs:complexType>
+          <xs:annotation>
+            <xs:documentation>A list of career levels which are preferred to the candidate. This describes the experience level, management level, or other levels of measuring a career.</xs:documentation>
+          </xs:annotation>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="hros:CareerLevelCodeList" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="jobGradeCode" type="hros:EntityType">
+        <xs:annotation>
+          <xs:documentation>A job grade code for the position. This would be defined by a company, union, or industry.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="offeredRemunerationPackage" type="hros:RemunerationPackageType">
+        <xs:annotation>
+          <xs:documentation>The preference for remuneration (including salary or hourly rate, benefits) for a position.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="travel">
+        <xs:complexType>
+          <xs:annotation>
+            <xs:documentation>Information regarding travel preferences of a person seeking a job.</xs:documentation>
+          </xs:annotation>
+          <xs:all>
+            <xs:element minOccurs="0" maxOccurs="1" name="willingToTravelIndicator" type="hros:IndicatorType">
+              <xs:annotation>
+                <xs:documentation>Indicates that a person is willing to travel within the capacity of his or her position.</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="1" name="percentage" type="hros:PercentType">
+              <xs:annotation>
+                <xs:documentation>OED: A rate, number or proportion in each hundred. The percentage of time required for a position or the percentage of time a person is willing to travel for a particular position. For example, a person is willing to travel 25% of his or her regularly scheduled hours.</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="1" name="descriptions" type="hros:StringTypeArray">
+              <xs:annotation>
+                <xs:documentation>Text describing any special travel preferences or considerations</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+          </xs:all>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="relocation">
+        <xs:complexType>
+          <xs:annotation>
+            <xs:documentation>Indicates if a candidate would consider moving to a new city or location for a suitable position.</xs:documentation>
+          </xs:annotation>
+          <xs:all>
+            <xs:element minOccurs="0" maxOccurs="1" name="willingToRelocateIndicator" type="hros:IndicatorType">
+              <xs:annotation>
+                <xs:documentation>Indicates whether relocation is an option for the candidate or considered by the hiring company.</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="1" name="descriptions" type="hros:StringTypeArray">
+              <xs:annotation>
+                <xs:documentation>Text describing any special considerations about relocation.</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+          </xs:all>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="workingLanguageCodes">
+        <xs:complexType>
+          <xs:annotation>
+            <xs:documentation>A code classifying the language or languages used within the workplace or associated with work. This is intended to communicate general information about the language(s) used within the work environment or correspondingly general information about a candidate's specific language preferences. This component might be offered as descriptive 'pre-qualification' information on a position announcement. It might appear within the context of a Candidate Profile as a general statement of a candidate's general language capabilities or preferences. WorkingLanguageCode is not intended as a statement of language proficiency or specific requirement relating to language proficiency. Specific information regarding language proficiency should be covered either within PersonCompetency or PositionCompetency as may be appropriate.</xs:documentation>
+          </xs:annotation>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="hros:LanguageCodeList" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+  <xs:complexType name="PreferredLocationType">
+    <xs:annotation>
+      <xs:documentation>Contains a collection of information about a candidate's preferences in the location of a position.</xs:documentation>
+    </xs:annotation>
+    <xs:all>
+      <xs:element minOccurs="0" maxOccurs="1" name="maximumCommuteDuration" type="hros:MeasureType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="maximumCommuteDistance" type="hros:MeasureType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="referenceLocation" type="hros:AddressType" />
+    </xs:all>
+  </xs:complexType>
+  <xs:complexType name="RemunerationPackageType">
+    <xs:annotation>
+      <xs:documentation>Terms offered or agreed regarding remuneration for a position. May include pay as well as benefits in-kind.</xs:documentation>
+    </xs:annotation>
+    <xs:all>
+      <xs:element minOccurs="0" maxOccurs="1" name="id" type="hros:EntityType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="basisCode">
+        <xs:simpleType>
+          <xs:annotation>
+            <xs:documentation>A code classifying the primary method of payment for the associated position or employment. This classifies the method by which remuneration for a position is provided or calculated.</xs:documentation>
+          </xs:annotation>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Hourly" />
+            <xs:enumeration value="Salaried" />
+            <xs:enumeration value="SalariedPlusCommission" />
+            <xs:enumeration value="CommissionOnly" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="ranges">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="hros:RemunerationRangeType" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="benefitsSummary" type="hros:StringTypeArray">
+        <xs:annotation>
+          <xs:documentation>A summary of the offered benefits.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="descriptions" type="hros:StringTypeArray" />
+    </xs:all>
+  </xs:complexType>
+  <xs:complexType name="PatentType">
+    <xs:annotation>
+      <xs:documentation>A licence from a government conferring for a set period the sole right to make, use, or sell some process or invention.</xs:documentation>
+    </xs:annotation>
+    <xs:all>
+      <xs:element minOccurs="0" maxOccurs="1" name="id" type="hros:EntityType">
+        <xs:annotation>
+          <xs:documentation>The unique license identifier.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="title">
+        <xs:simpleType>
+          <xs:annotation>
+            <xs:documentation>The patent title as registered with the government organization.</xs:documentation>
+          </xs:annotation>
+          <xs:restriction base="xs:string" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="inventorNames" type="hros:StringTypeArray">
+        <xs:annotation>
+          <xs:documentation>The list of inventors who are registered on the patent.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="issuingAuthority" type="hros:OrganizationType">
+        <xs:annotation>
+          <xs:documentation>The agency under which the patent is registered</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="status" type="hros:PatentStatusCodeList">
+        <xs:annotation>
+          <xs:documentation>The current status of the patent. Statuses include filed, pending, issued.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="attachmentReferences">
+        <xs:complexType>
+          <xs:annotation>
+            <xs:documentation>References to the patent.</xs:documentation>
+          </xs:annotation>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="hros:AttachmentReferenceType" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="descriptions" type="hros:StringTypeArray" />
+    </xs:all>
+  </xs:complexType>
+  <xs:complexType name="PublicationType">
+    <xs:annotation>
+      <xs:documentation />
+    </xs:annotation>
+    <xs:all>
+      <xs:element minOccurs="0" maxOccurs="1" name="id" type="hros:IdentifierType" />
+      <xs:element minOccurs="1" maxOccurs="1" name="type" type="hros:PublicationTypeCodeList">
+        <xs:annotation>
+          <xs:documentation>Type of publication, such as a book or article.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="date" type="hros:DateType" />
+      <xs:element minOccurs="1" maxOccurs="1" name="title">
+        <xs:simpleType>
+          <xs:restriction base="xs:string" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="abstract">
+        <xs:simpleType>
+          <xs:restriction base="xs:string" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="contributors">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item">
+              <xs:complexType>
+                <xs:all>
+                  <xs:element minOccurs="0" maxOccurs="1" name="name">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string" />
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element minOccurs="0" maxOccurs="1" name="role">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string" />
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:all>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="copyrights">
+        <xs:complexType>
+          <xs:annotation>
+            <xs:documentation>A list of copyright holders and year when the copyright was issued.</xs:documentation>
+          </xs:annotation>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item">
+              <xs:complexType>
+                <xs:all>
+                  <xs:element minOccurs="0" maxOccurs="1" name="owner">
+                    <xs:simpleType>
+                      <xs:annotation>
+                        <xs:documentation>The owner(s) of the copyright.</xs:documentation>
+                      </xs:annotation>
+                      <xs:restriction base="xs:string" />
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element minOccurs="0" maxOccurs="1" name="year" type="hros:YearType">
+                    <xs:annotation>
+                      <xs:documentation>The year when the copyright was issued to the owner.</xs:documentation>
+                    </xs:annotation>
+                  </xs:element>
+                </xs:all>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="attachmentReferences">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="hros:AttachmentReferenceType" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="languageCode" type="hros:LanguageCodeList">
+        <xs:annotation>
+          <xs:documentation>The language of the publication.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="comments">
+        <xs:complexType>
+          <xs:annotation>
+            <xs:documentation>Comments related to the publication.</xs:documentation>
+          </xs:annotation>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="hros:CommentType" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="journal">
+        <xs:simpleType>
+          <xs:annotation>
+            <xs:documentation>The journal where the publication was published.</xs:documentation>
+          </xs:annotation>
+          <xs:restriction base="xs:string" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="issn">
+        <xs:simpleType>
+          <xs:annotation>
+            <xs:documentation>The ISSN (International Standard Serial Number) issued for the publication.</xs:documentation>
+          </xs:annotation>
+          <xs:restriction base="xs:string" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="volume">
+        <xs:simpleType>
+          <xs:annotation>
+            <xs:documentation />
+          </xs:annotation>
+          <xs:restriction base="xs:string" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="issue">
+        <xs:simpleType>
+          <xs:annotation>
+            <xs:documentation />
+          </xs:annotation>
+          <xs:restriction base="xs:string" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="pages">
+        <xs:simpleType>
+          <xs:annotation>
+            <xs:documentation />
+          </xs:annotation>
+          <xs:restriction base="xs:string" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="edition">
+        <xs:simpleType>
+          <xs:annotation>
+            <xs:documentation />
+          </xs:annotation>
+          <xs:restriction base="xs:string" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="chapters">
+        <xs:simpleType>
+          <xs:annotation>
+            <xs:documentation />
+          </xs:annotation>
+          <xs:restriction base="xs:string" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="isbn">
+        <xs:simpleType>
+          <xs:annotation>
+            <xs:documentation />
+          </xs:annotation>
+          <xs:restriction base="xs:string" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="publisher">
+        <xs:simpleType>
+          <xs:annotation>
+            <xs:documentation />
+          </xs:annotation>
+          <xs:restriction base="xs:string" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="publisherLocation" type="hros:LocationType">
+        <xs:annotation>
+          <xs:documentation />
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="event" type="hros:EventType">
+        <xs:annotation>
+          <xs:documentation />
+        </xs:annotation>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+  <xs:complexType name="EventType">
+    <xs:annotation>
+      <xs:documentation />
+    </xs:annotation>
+    <xs:all>
+      <xs:element minOccurs="0" maxOccurs="1" name="id" type="hros:IdentifierType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="name">
+        <xs:simpleType>
+          <xs:restriction base="xs:string" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="venue">
+        <xs:simpleType>
+          <xs:restriction base="xs:string" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="location" type="hros:LocationType" />
+    </xs:all>
+  </xs:complexType>
+  <xs:complexType name="OrganizationAffiliationType">
+    <xs:annotation>
+      <xs:documentation>OLD: Contains information about a person's affiliation with a trade, professional, or similar organization or group formed around a common purpose or cause.</xs:documentation>
+    </xs:annotation>
+    <xs:all>
+      <xs:element minOccurs="0" maxOccurs="1" name="organization" type="hros:OrganizationType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="affiliationTypeCode" type="hros:AffiliatedOrganizationTypeCodeList">
+        <xs:annotation>
+          <xs:documentation>The type of association or organization with which a person is affiliated. In most contexts, this would be an organizational affiliation other than that with an employer. Typically, would be an affiliation with an association, trade organization, or union.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="memberId" type="hros:IdentifierType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="role">
+        <xs:simpleType>
+          <xs:restriction base="xs:string" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="startDate" type="hros:DateType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="endDate" type="hros:DateType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="descriptions" type="hros:StringTypeArray" />
+      <xs:element minOccurs="0" maxOccurs="1" name="attachmentReferences">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="hros:AttachmentReferenceType" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+  <xs:complexType name="RefereeType">
+    <xs:annotation>
+      <xs:documentation>OLD: A person who may be referred to for information or guidance on the character or other qualities of someone, spec. of an applicant for employment, for an academic or other award, or the like.</xs:documentation>
+    </xs:annotation>
+    <xs:all>
+      <xs:element minOccurs="0" maxOccurs="1" name="refereeId" type="hros:IdentifierType" />
+      <xs:element minOccurs="1" maxOccurs="1" name="personName" type="hros:PersonNameType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="positionTitle">
+        <xs:simpleType>
+          <xs:restriction base="xs:string" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="organizationName">
+        <xs:simpleType>
+          <xs:restriction base="xs:string" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="communication" type="hros:CommunicationType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="yearsKnown">
+        <xs:simpleType>
+          <xs:restriction base="xs:decimal" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="relationship" type="hros:RelationshipTypeCodeList" />
+      <xs:element minOccurs="0" maxOccurs="1" name="attachmentReferences">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="hros:AttachmentReferenceType" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="comments">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="hros:CommentType" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+  <xs:complexType name="CandidateType">
+    <xs:annotation>
+      <xs:documentation>A person who is requesting consideration or is being considered for a current or future position at a company</xs:documentation>
+    </xs:annotation>
+    <xs:all>
+      <xs:element minOccurs="0" maxOccurs="1" name="id" type="hros:IdentifierType">
+        <xs:annotation>
+          <xs:documentation>Unique identifier of candidate in the originating system. This ID is typically used to facility data interchange, and is typically assigned by the owner of the candidate.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="alternateIds">
+        <xs:complexType>
+          <xs:annotation>
+            <xs:documentation>A set of other identifiers for the candidate. These identifiers are typically assigned by secondary or third party systems involved in data interchange.</xs:documentation>
+          </xs:annotation>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="hros:IdentifierType" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="uri">
+        <xs:simpleType>
+          <xs:annotation>
+            <xs:documentation>A URI (unique resource indicator) to more information on the candidate on the internet. This could include a public profile URL, an online resume, or a person website</xs:documentation>
+          </xs:annotation>
+          <xs:restriction base="xs:anyURI" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="distributionGuidelines" type="hros:DistributionGuidelinesType">
+        <xs:annotation>
+          <xs:documentation>Instructions on how this candidate should be distributed to third parties.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="person" type="hros:CandidatePersonType">
+        <xs:annotation>
+          <xs:documentation>Information to identify the person, including name, communcation, demographic details and other identifiers.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="profiles">
+        <xs:complexType>
+          <xs:annotation>
+            <xs:documentation>Information on the profiles of a candidate. A typical candidate will have one profile, but additional profiles can be included in difference languages, presentations, or industry focus.</xs:documentation>
+          </xs:annotation>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="hros:CandidateProfileType" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+  <xs:element name="Candidate" type="hros:CandidateType" />
+</xs:schema>

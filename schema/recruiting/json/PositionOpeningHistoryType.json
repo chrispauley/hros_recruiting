@@ -1,0 +1,77 @@
+{
+    "$schema": "http://schema.hropenstandards.org/4_0/common/json/meta/hros.json",
+    "version": "4.1.0",
+    "title": "PositionOpeningHistoryType",
+    "description": "Defines the history of a job or position that is available at an organization",
+    "type": "object",
+    "definitions": {
+        "PositionOpeningStatusType": {
+            "title": "PositionOpeningApprovalStatusType",
+            "description": "",
+            "enum": [
+                "creating",
+                "defined",
+                "approved",
+                "rejected",
+                "open",
+                "submitted",
+                "closed",
+                "cancelled"
+            ]
+        },
+        "PositionOpeningApprovalStatusType": {
+            "title": "PositionOpeningApprovalStatusType",
+            "description": "The status indicating the approval of the Position opening review. Status may be Not Reviewed, Reviewing, Reviewed.",
+            "enum": [
+                "notreviewed",
+                "reviewing",
+                "reviewed"
+            ]
+        },
+        "ApprovalRecordType": {
+            "title": "ApprovalRecordType",
+            "description": "Defines the record of approval. This includes the date approved, the person who approved, the approval status, and the review status.",
+            "type": "object",
+            "properties": {
+                "dateApproved": { "$ref": "../../common/json/base/DateTimeType.json#" },
+                "person": { "$ref": "../../common/json/person/PersonNameType.json#" },
+                "approvalStatus": { "$ref": "#/definitions/PositionOpeningApprovalStatusType" },
+                "reviewStatus": { "$ref": "#/definitions/PositionOpeningApprovalStatusType" }
+            }
+        },
+        "StatusRecordType": {
+            "title": "StatusRecordType",
+            "description": "Defines status record for the position opening as there is a status change. Record includes thes chagne date, the new status, and the previous status.",
+            "type": "object",
+            "properties": {
+                "changeDate": { "$ref": "../../common/json/base/DateTimeType.json#" },
+                "status": { "$ref": "#/definitions/PositionOpeningStatusType" },
+                "previousStatus": { "$ref": "#/definitions/PositionOpeningStatusType" }
+            }
+        }
+    },
+    "properties": {
+        "summaryStatus": {
+            "description": "Current position opening status.",
+            "type": "object",
+            "properties": {
+                "currentStatus": { "$ref": "#/definitions/PositionOpeningStatusType" }
+            }
+        },
+        "approvalHistory": {
+            "description": "Stores the record of approvals for the position opening.",
+            "type": "array",
+            "items": { "$ref": "#/definitions/ApprovalRecordType" }
+        },
+        "reviewerHistory": {
+            "description": "Stores the record of reviewers of the position opening",
+            "type": "array",
+            "items": { "$ref": "#/definitions/ApprovalRecordType" }
+        },
+        "statusHistory": {
+            "description": "Stores a record of status changes.",
+            "type": "array",
+            "items": { "$ref": "#/definitions/StatusRecordType" }
+        }
+    }
+}

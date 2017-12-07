@@ -1,0 +1,359 @@
+{
+    "person": {
+        "name": {
+            "formattedName": "Mr. Jason Nustad",
+            "given": "Jason",
+            "family": "Nustad",
+            "preferredSalutationCode": "Mr."
+        },
+        "gender": "male",
+        "age": 38,
+        "birthDate": "1978-10-11",
+        "birthPlace": "New York",
+        "citizenship": [ "US" ],
+        "primaryLanguage": "en-US",
+        "studentIndicator": false,
+        "communication": {
+            "address": [
+                {
+                    "useCode": "private",
+                    "countryCode": "US",
+                    "countrySubDivisions": [
+                        {
+                            "type": "state",
+                            "value": "CT"
+                        }
+                    ],
+                    "city": "New Haven",
+                    "postalCode": "06511",
+                    "line": "Lawrence Street 61",
+                    "extendedLines": [
+                        {
+                            "type": "apartment",
+                            "value": "Apartment 4"
+                        }
+                    ],
+                    "geoLocation": {
+                        "longitude": -72.9171123,
+                        "latitude": 41.3188820
+                    },
+                    "formattedAddress": "Lawrence Street 61, Apartment 4, 06511 New Haven, CT"
+                }
+            ],
+            "phone": [
+                {
+                    "useCode": "private",
+                    "preference": 1,
+                    "formattedNumber": "+1 203 11223344",
+                    "countryDialingCode": "1",
+                    "areaDialingCode": "203",
+                    "dialNumber": "11223344"
+                }
+            ],
+            "email": [
+                {
+                    "useCode": "private",
+                    "preference": 1,
+                    "address": "jason.nustad@aol.com"
+                }
+            ],
+            "web": [
+                {
+                    "name": "Linkedin",
+                    "useCode": "business",
+                    "url": "https://www.linkedin.com/in/jnustad"
+                }
+            ]
+        }
+    },
+    "profiles": [
+        {
+            "languageCode": "en-US",
+            "personAvailability": {
+                "availabilityDates": [
+                    {
+                        "startDateTime": "2017-06-01"
+                    }
+                ],
+                "immediateStartIndicator": false
+            },
+            "associatedPositionOpenings": [
+                {
+                    "positionOpeningId": {
+                        "value": "SJB-0711",
+                        "schemeId": "SomeJobBoard"
+                    },
+                    "positionTitle": "Research Scientist",
+                    "positionUri": "http://somejobboard.com/job=sjb0711",
+                    "candidateAppliedIndicator": true
+                }
+            ],
+            "employment": [
+                {
+                    "organization": {
+                        "name": "General Electric"
+                    },
+                    "internetDomainName": "www.ge.com",
+                    "employmentPeriod": {
+                        "start": "2001-07",
+                        "currentIndicator": true
+                    },
+                    "positionHistories": [
+                        {
+                            "title": "Software Developer for NMR Analysis",
+                            "resourceRelationshipCode": "VendorEmployee",
+                            "vendorEmployeeIndicator": true,
+                            "organizationUnit": {
+                                "name": "Research Lab NMR"
+                            },
+                            "internetDomainName": "www.ge.com/nmr",
+                            "location": {
+                                "name": "",
+                                "countryCode": "US",
+                                "countrySubDivisions": [
+                                    {
+                                        "type": "state",
+                                        "value": "CT"
+                                    }
+                                ],
+                                "city": "New Haven",
+                                "postalCode": "06511",
+                                "line": "Lawrence Street 61"
+                            },
+                            "employmentPeriod": {
+                                "start": "2001-07",
+                                "end": "2008-12"
+                            }
+                        },
+                        {
+                            "title": "Project manager, NMR Analyis",
+                            "resourceRelationshipCode": "Employee",
+                            "organizationUnit": {
+                                "name": "Research Center"
+                            },
+                            "internetDomainName": "www.ge.com/nmr",
+                            "location": {
+                                "name": "",
+                                "countryCode": "US",
+                                "countrySubDivisions": [
+                                    {
+                                        "type": "state",
+                                        "value": "NY"
+                                    }
+                                ],
+                                "city": "Niskayuna",
+                                "postalCode": "12309",
+                                "line": "1 Research Cir"
+                            },
+                            "employmentPeriod": {
+                                "start": "2008-01",
+                                "currentIndicator": true
+                            }
+                        }
+                    ]
+                }
+            ],
+            "education": [
+                {
+                    "institution": {
+                        "name": "Martin Luther King High School",
+                        "communication": {
+                            "address": [
+                                {
+                                    "countryCode": "US",
+                                    "countrySubDivisions": [
+                                        {
+                                            "type": "state",
+                                            "value": "PA"
+                                        }
+                                    ],
+                                    "city": "Philadelphia",
+                                    "postalCode": "19138",
+                                    "line": "6100 Stenton Ave"
+                                }
+                            ]
+                        }
+                    },
+                    "iscedEducationLevelCode": "3",
+                    "attendancePeriods": [
+                        {
+                            "start": "1988-06",
+                            "end": "1996-05"
+                        }
+                    ]
+                },
+                {
+                    "institution": {
+                        "name": "Yale University"
+                    },
+                    "department": {
+                        "name": "Department of Computer Science",
+                        "communication": {
+                            "address": [
+                                {
+                                    "countryCode": "US",
+                                    "countrySubDivisions": [
+                                        {
+                                            "type": "state",
+                                            "value": "CT"
+                                        }
+                                    ],
+                                    "city": "New Haven",
+                                    "postalCode": "06511",
+                                    "line": "51 Prospect St"
+                                }
+                            ]
+                        }
+                    },
+                    "programs": [
+                        "Computer Science",
+                        "Linguistics"
+                    ],
+                    "iscedEducationLevelCode": "6",
+                    "attendancePeriods": [
+                        {
+                            "start": "1996-10",
+                            "end": "1999-05"
+                        }
+                    ],
+                    "educationDegrees": [
+                        {
+                            "id": {
+                                "value": ""
+                            },
+                            "name": "Bachelor",
+                            "codes": [ "Bachelor" ],
+                            "date": "1999-05-15",
+                            "score": {
+                                "scoresNumeric": [
+                                    {
+                                        "value": 88,
+                                        "minimum": 0,
+                                        "maximum": 100,
+                                        "scoreCore": "Percentage"
+                                    }
+                                ]
+                            },
+                            "iscedEducationLevelCode": "6",
+                            "specializations": [
+                                {
+                                    "name": "Computer Science",
+                                    "type": "major"
+                                },
+                                {
+                                    "name": "Linguistics",
+                                    "type": "minor"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "licenses": [
+                {
+                    "id": {
+                        "value": "F01335916X1",
+                        "schemeId": "Führerschein Bundesrepublik Deutschland",
+                        "schemeAgencyId": "Bundesrepublik Deutschland"
+                    },
+                    "name": "Führerschein",
+                    "type": {
+                        "name": "Führerschein",
+                        "code": "Driving License"
+                    },
+                    "status": "Active",
+                    "effectiveTimePeriod": {
+                        "validFrom": "2015-01-22",
+                        "validTo": "2030-01-21"
+                    },
+                    "firstIssued": "2003-06-05",
+                    "issuingAuthority": {
+                        "name": "Landratsamt Musterhausen am See"
+                    },
+                    "endorsements": [
+                        {
+                            "value": "B",
+                            "description": "Car"
+                        },
+                        {
+                            "value": "C",
+                            "description": "Truck",
+                            "validFrom": "2015-01-22",
+                            "validTo": "2020-01-21"
+                        }
+                    ],
+                    "restrictions": [
+                        {
+                            "value": "B, only accompanied driving",
+                            "validTo": "2016-12-31"
+                        }
+                    ],
+                    "descriptions": [
+                        "class B, only accompanied driving until 2016-12-31"
+                    ]
+                }
+            ],
+            "certifications": [
+                {
+                    "name": "Certified Professional for Software Architecture, Foundation Level",
+                    "type": {
+                        "code": "CPSA"
+                    },
+                    "id": {
+                        "value": "125432-SA",
+                        "schemeAgencyId": "iSAQB"
+                    },
+                    "issuingAuthority": {
+                        "name": "Software Quality Laboratory",
+                        "communication": {
+                            "address": [
+                                {
+                                    "city": "Boston"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "active",
+                    "firstIssued": "2014-10-15",
+                    "effectiveTimePeriod": {
+                        "validFrom": "2014-10-15",
+                        "validTo": "2024-10-14"
+                    }
+                }
+            ],
+            "qualifications": [
+                {
+                    "competencyIds": [
+                        {
+                            "value": "ESCO ITM:22587",
+                            "schemeId": "ESCO Skills",
+                            "schemeVersionId": "ESCO ITM:20150303191510054",
+                            "schemeAgencyId": "EU",
+                            "schemeLink": "http://data.europa.eu/esco/skill/22587",
+                            "agencyUri": "http://data.europa.eu"
+                        }
+                    ],
+                    "competencyName": "Java",
+                    "proficiencyLevel": {
+                        "scoresText": [
+                            {
+                                "value": "Expert level"
+                            }
+                        ]
+                    },
+                    "experienceMeasure": {
+                        "value": 5,
+                        "unitCode": "ANN"
+                    },
+                    "lastUsedDate": "2016-03"
+                }
+            ],
+            "attachements": [
+                {
+                    "url": "https://www.visualcv.com/jasonnustad",
+                    "descriptions": [ "CV" ]
+                }
+            ]
+        }
+    ]
+}

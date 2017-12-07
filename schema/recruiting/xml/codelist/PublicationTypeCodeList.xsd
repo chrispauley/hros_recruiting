@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:hros="http://hropenstandards.org/xml/" targetNamespace="http://hropenstandards.org/xml/" version="4.0.1" id="PublicationTypeCodeList" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="PublicationTypeCodeList">
+    <xs:annotation>
+      <xs:documentation>Publication type codelist</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Book" />
+      <xs:enumeration value="Paper" />
+      <xs:enumeration value="Article" />
+      <xs:enumeration value="Conference" />
+      <xs:enumeration value="Thesis" />
+      <xs:enumeration value="Whitepaper" />
+      <xs:enumeration value="Report" />
+      <xs:enumeration value="Technical documentation" />
+      <xs:enumeration value="Study" />
+      <xs:enumeration value="Manual" />
+      <xs:enumeration value="Researchpaper" />
+      <xs:enumeration value="Other publication" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PublicationTypeCode" type="hros:PublicationTypeCodeList" />
+</xs:schema>

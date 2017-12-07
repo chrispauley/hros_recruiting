@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:hros="http://hropenstandards.org/xml/" targetNamespace="http://hropenstandards.org/xml/" version="4.0.1" id="HROpenBaseDataTypes-forRecruiting" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
