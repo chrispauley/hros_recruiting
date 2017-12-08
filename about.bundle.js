@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 95);
+/******/ 	return __webpack_require__(__webpack_require__.s = 97);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -21398,7 +21398,9 @@ exports.default = SiteNav;
 /* 92 */,
 /* 93 */,
 /* 94 */,
-/* 95 */
+/* 95 */,
+/* 96 */,
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21416,7 +21418,7 @@ var _SiteNav = __webpack_require__(33);
 
 var _SiteNav2 = _interopRequireDefault(_SiteNav);
 
-var _About = __webpack_require__(96);
+var _About = __webpack_require__(98);
 
 var _About2 = _interopRequireDefault(_About);
 
@@ -21430,7 +21432,7 @@ _reactDom2.default.render(_react2.default.createElement(_About2.default, null), 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 96 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
