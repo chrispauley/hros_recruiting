@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 97);
+/******/ 	return __webpack_require__(__webpack_require__.s = 98);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -953,8 +953,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 module.exports = getActiveElement;
 
 /***/ }),
-/* 15 */,
-/* 16 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process) {/**
@@ -989,6 +988,7 @@ if (process.env.NODE_ENV !== 'production') {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
+/* 16 */,
 /* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3150,7 +3150,7 @@ var hyphenateStyleName = __webpack_require__(25);
 var emptyFunction = __webpack_require__(2);
 var camelizeStyleName = __webpack_require__(27);
 var performanceNow = __webpack_require__(29);
-var propTypes = __webpack_require__(16);
+var propTypes = __webpack_require__(15);
 var emptyObject = __webpack_require__(5);
 var checkPropTypes = __webpack_require__(7);
 var shallowEqual = __webpack_require__(11);
@@ -21268,7 +21268,7 @@ var SiteNav = function (_React$Component) {
                             { className: 'navbar-nav mx-auto w-100 justify-content-center' },
                             _react2.default.createElement(
                                 'li',
-                                { className: 'nav-item active' },
+                                { className: location === 'candidate' ? 'nav-item active' : 'nav-item' },
                                 _react2.default.createElement(
                                     'a',
                                     { className: 'nav-link', href: 'candidate.html' },
@@ -21277,7 +21277,7 @@ var SiteNav = function (_React$Component) {
                             ),
                             _react2.default.createElement(
                                 'li',
-                                { className: 'nav-item' },
+                                { className: location === 'positionopening' ? 'nav-item active' : 'nav-item' },
                                 _react2.default.createElement(
                                     'a',
                                     { className: 'nav-link', href: 'positionopening.html' },
@@ -21286,7 +21286,7 @@ var SiteNav = function (_React$Component) {
                             ),
                             _react2.default.createElement(
                                 'li',
-                                { className: 'nav-item' },
+                                { className: location === 'jschemaframe' ? 'nav-item active' : 'nav-item' },
                                 _react2.default.createElement(
                                     'a',
                                     { className: 'nav-link', href: 'jschemaframe.html' },
@@ -21295,7 +21295,7 @@ var SiteNav = function (_React$Component) {
                             ),
                             _react2.default.createElement(
                                 'li',
-                                { className: 'nav-item' },
+                                { className: location === 'schemaviewer' ? 'nav-item active' : 'nav-item' },
                                 _react2.default.createElement(
                                     'a',
                                     { className: 'nav-link', href: 'schemaviewer.html' },
@@ -21308,7 +21308,7 @@ var SiteNav = function (_React$Component) {
                             { className: 'nav navbar-nav ml-auto w-100 justify-content-end' },
                             _react2.default.createElement(
                                 'li',
-                                { className: 'nav-item' },
+                                { className: location === 'about' ? 'nav-item active' : 'nav-item' },
                                 _react2.default.createElement(
                                     'a',
                                     { className: 'nav-link', href: 'about.html' },
@@ -21321,7 +21321,7 @@ var SiteNav = function (_React$Component) {
                                 _react2.default.createElement(
                                     'a',
                                     { className: 'nav-link', href: '#' },
-                                    _react2.default.createElement(_User2.default, { name: this.props.name })
+                                    _react2.default.createElement(_User2.default, { name: this.state.name })
                                 )
                             )
                         )
@@ -21400,7 +21400,8 @@ exports.default = SiteNav;
 /* 94 */,
 /* 95 */,
 /* 96 */,
-/* 97 */
+/* 97 */,
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21418,7 +21419,7 @@ var _SiteNav = __webpack_require__(33);
 
 var _SiteNav2 = _interopRequireDefault(_SiteNav);
 
-var _About = __webpack_require__(98);
+var _About = __webpack_require__(99);
 
 var _About2 = _interopRequireDefault(_About);
 
@@ -21427,12 +21428,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 process.env.BABEL_ENV = 'development';
 process.env.NODE_ENV = 'development';
 
-_reactDom2.default.render(_react2.default.createElement(_SiteNav2.default, null), document.querySelector('#top-nav'));
+_reactDom2.default.render(_react2.default.createElement(_SiteNav2.default, { location: 'about' }), document.querySelector('#top-nav'));
 _reactDom2.default.render(_react2.default.createElement(_About2.default, null), document.querySelector('main'));
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 98 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

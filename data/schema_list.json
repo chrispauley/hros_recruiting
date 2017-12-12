@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "displayName": "Candidate Schema",
+        "publicPath": "candidateSchema.bundle.js"
+    },
+    {
+        "id": 2,
+        "displayName": "Position Opening Schema",
+        "publicPath": "positionOpeningSchema.bundle.js"
+    }
+]

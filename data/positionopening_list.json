@@ -2,6 +2,9 @@
   { "displayName": "PositionOpening_extended",
     "publicPath": "data/PositionOpening_extended.json"
   },
+  { "displayName": "UC6_HRIS_to_LMS",
+    "publicPath": "/data/PositionOpening_UC6_HRIS_to_LMS.json"
+  },
   { "displayName": "Position with 2 Profiles",
     "publicPath": "data/PositionOpening_multiple-profiles-2.json"
   },
@@ -16,9 +19,6 @@
   },
   { "displayName": "UC4-exchange-from-HRIS-to-ATS",
     "publicPath": "/data/PositionOpening_UC4-exchange-from-HRIS-to-ATS.json"
-  },
-  { "displayName": "UC6_HRIS_to_LMS",
-    "publicPath": "/data/PositionOpening_UC6_HRIS_to_LMS.json"
   }
 
 ]
