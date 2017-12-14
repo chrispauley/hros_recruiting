@@ -102,6 +102,93 @@
       "securityCredentials": [],
       "references": [],
       "attachments": []
+    },
+
+    {
+      "id": { "value": "4" },
+      "languageCode": "en-US",
+      "profileName": "Profile Number 4",
+
+      "personAvailability": {},
+      "processingInformation": {},
+      "distributionGuidelines": {},
+      "associatedPositionOpenings": [{}],
+
+      "objective": "Profile 4 objective will show the fourth item in a list.",
+      "executiveSummary": "Executive Summary for Profile 4",
+      "employerPreferences": {},
+      "positionPreferences": {},
+
+      "education": [],
+      "employment": [],
+      "militaryService": [],
+      "licenses": [],
+      "certifications": [],
+      "patents": [],
+      "publications": [],
+      "qualifications": [],
+      "affiliations": [],
+      "securityCredentials": [],
+      "references": [],
+      "attachments": []
+    },
+
+    {
+      "id": { "value": "5" },
+      "languageCode": "en-US",
+      "profileName": "Profile Number 5",
+
+      "personAvailability": {},
+      "processingInformation": {},
+      "distributionGuidelines": {},
+      "associatedPositionOpenings": [{}],
+
+      "objective": "Profile 4 objective will show the fifth item in a list.",
+      "executiveSummary": "Executive Summary for Profile 5",
+      "employerPreferences": {},
+      "positionPreferences": {},
+
+      "education": [],
+      "employment": [],
+      "militaryService": [],
+      "licenses": [],
+      "certifications": [],
+      "patents": [],
+      "publications": [],
+      "qualifications": [],
+      "affiliations": [],
+      "securityCredentials": [],
+      "references": [],
+      "attachments": []
+    },
+
+    {
+      "id": { "value": "6" },
+      "languageCode": "en-US",
+      "profileName": "Profile Number 6",
+
+      "personAvailability": {},
+      "processingInformation": {},
+      "distributionGuidelines": {},
+      "associatedPositionOpenings": [{}],
+
+      "objective": "Profile 4 objective will show the sixth item in a list.",
+      "executiveSummary": "Executive Summary for Profile 6",
+      "employerPreferences": {},
+      "positionPreferences": {},
+
+      "education": [],
+      "employment": [],
+      "militaryService": [],
+      "licenses": [],
+      "certifications": [],
+      "patents": [],
+      "publications": [],
+      "qualifications": [],
+      "affiliations": [],
+      "securityCredentials": [],
+      "references": [],
+      "attachments": []
     }
   ]
 }

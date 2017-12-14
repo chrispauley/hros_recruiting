@@ -1,0 +1,19 @@
+export default {
+
+  "@context" : "http://schema.org",
+  "@type" : "HommePage",
+
+  "name": "HROS Recruiting - JSON Instance Viewer",
+  "about" : "Home page for Chris Pauley's HR Open Standards Recruiting Specification Instance Viewer",
+  "description" : "",
+  "license": "",
+
+  "publisher" : {
+    "@type": "Person",
+    "name" : "Chris Pauley",
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "email": "pauleyc@yahoo.com"
+    }]
+  }
+}

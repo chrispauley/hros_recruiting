@@ -1,0 +1,139 @@
+{
+    "documentId": {
+        "value": "JOB-0000003",
+        "schemeId": "SomeVendorAts"
+    },
+    "alternateIds": [{
+            "value": "PO-000013",
+            "schemeId": "SomeOtherVendorAts"
+        },
+        {
+            "value": "HRIS-846941",
+            "schemeId": "SomeOtherVendorHris"
+        }
+    ],
+    "language": "en-US",
+    "dataProtectionPolicy": {
+        "geoRestrictions": [{
+            "country": "US",
+            "policy": "Full Control"
+        }],
+        "retentionDate": "2017-11-31",
+        "retentionDays": 365
+    },
+    "statusCode": "Active",
+    "approvalStatusCode": "In Review",
+    "approvalMessage": "Not approved.",
+    "postingRequester": {
+        "id": {
+            "value": "124342",
+            "schemeId": "SomeVendorAts"
+        },
+        "code": "D-145364",
+        "name": "Department X",
+        "taxId": {
+            "value": "LID-23343434",
+            "schemeId": "SomeVendorAts"
+        },
+        "personContacts": [{
+            "id": {
+                "value": "PID112233",
+                "schemeId": "SomeVendorAts"
+            },
+            "name": {
+                "given": "Andrew",
+                "family": "Thompson"
+            },
+            "primaryLanguage": "en-US",
+            "roleCode": "Hiring Manager",
+            "communication": {
+                "email": [{
+                    "address": "andrew.thompson@example.com"
+                }],
+                "address": [{
+                    "line": "",
+                    "city": "Philadelphia",
+                    "country": "US"
+                }]
+            }
+        }]
+    },
+    "positionProfiles": [
+        {
+            "profileName": "Profile 1",
+            "profileId": {
+                "value": "PP-1000001",
+                "schemeId": "SomeVendorAts"
+            },
+
+            "positionId": {
+                "value": "JOB-1",
+                "schemeId": "SomeVendorAts"
+            },
+            "positionTitle": "Software Developer .NET",
+
+            "positionOrganization": {
+                "name": "ACME Solutions"
+            },
+
+            "immediateStartIndicator": true
+        },
+        {
+            "profileName": "Profile 2",
+            "profileId": {
+                "value": "PP-1000002",
+                "schemeId": "SomeVendorAts"
+            },
+
+            "positionId": {
+                "value": "JOB-1",
+                "schemeId": "SomeVendorAts"
+            },
+            "positionTitle": "Software Developer .NET",
+
+            "positionOrganization": {
+                "name": "ACME Solutions"
+            },
+
+            "immediateStartIndicator": true
+        },
+        {
+            "profileName": "Profile 3",
+            "profileId": {
+                "value": "PP-1000003",
+                "schemeId": "SomeVendorAts"
+            },
+
+            "positionId": {
+                "value": "JOB-1",
+                "schemeId": "SomeVendorAts"
+            },
+            "positionTitle": "Software Developer .NET",
+
+            "positionOrganization": {
+                "name": "ACME Solutions"
+            },
+
+            "immediateStartIndicator": true
+        },
+        {
+            "profileName": "Profile 4",
+            "profileId": {
+                "value": "PP-1000004",
+                "schemeId": "SomeVendorAts"
+            },
+
+            "positionId": {
+                "value": "JOB-1",
+                "schemeId": "SomeVendorAts"
+            },
+            "positionTitle": "Software Developer .NET",
+
+            "positionOrganization": {
+                "name": "ACME Solutions"
+            },
+
+            "immediateStartIndicator": true
+        }
+    ]
+}
