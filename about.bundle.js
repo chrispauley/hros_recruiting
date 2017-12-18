@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 603);
+/******/ 	return __webpack_require__(__webpack_require__.s = 629);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -21272,7 +21272,7 @@ module.exports = invariant;
 
 /***/ }),
 
-/***/ 603:
+/***/ 629:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21290,7 +21290,7 @@ var _SiteNav = __webpack_require__(45);
 
 var _SiteNav2 = _interopRequireDefault(_SiteNav);
 
-var _About = __webpack_require__(604);
+var _About = __webpack_require__(630);
 
 var _About2 = _interopRequireDefault(_About);
 
@@ -21305,7 +21305,7 @@ _reactDom2.default.render(_react2.default.createElement(_About2.default, null), 
 
 /***/ }),
 
-/***/ 604:
+/***/ 630:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21319,7 +21319,20 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _aboutPage = __webpack_require__(631);
+
+var _aboutPage2 = _interopRequireDefault(_aboutPage);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var JsonLd = function JsonLd(_ref) {
+  var data = _ref.data;
+  return _react2.default.createElement(
+    'script',
+    { type: 'application/ld+json' },
+    JSON.stringify(data)
+  );
+};
 
 var About = function About() {
   return _react2.default.createElement(
@@ -21448,11 +21461,36 @@ var About = function About() {
           )
         )
       )
-    )
+    ),
+    _react2.default.createElement(JsonLd, { data: _aboutPage2.default })
   );
 };
 
 exports.default = About;
+
+/***/ }),
+
+/***/ 631:
+/***/ (function(module, exports) {
+
+module.exports = {
+  "@context": "http://schema.org",
+  "@type": "AboutPage",
+  "name": "HROS Recruiting - JSON Instance Viewer",
+  "about": "",
+  "description": "",
+  "license": "",
+  "publisher": {
+    "@type": "Person",
+    "name": "Chris Pauley",
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "email": "pauleyc@yahoo.com"
+      }
+    ]
+  }
+};
 
 /***/ }),
 

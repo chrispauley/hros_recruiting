@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 226);
+/******/ 	return __webpack_require__(__webpack_require__.s = 227);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -693,7 +693,7 @@ module.exports = containsNode;
 
 /***/ }),
 
-/***/ 226:
+/***/ 227:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -707,13 +707,13 @@ var _reactDom = __webpack_require__(32);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-__webpack_require__(227);
+__webpack_require__(228);
 
 var _SiteNav = __webpack_require__(45);
 
 var _SiteNav2 = _interopRequireDefault(_SiteNav);
 
-var _Home = __webpack_require__(228);
+var _Home = __webpack_require__(229);
 
 var _Home2 = _interopRequireDefault(_Home);
 
@@ -728,14 +728,14 @@ _reactDom2.default.render(_react2.default.createElement(_Home2.default, null), d
 
 /***/ }),
 
-/***/ 227:
+/***/ 228:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "9b12ee3361e775ecee01ee83bdbb2711.css";
 
 /***/ }),
 
-/***/ 228:
+/***/ 229:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -748,6 +748,10 @@ Object.defineProperty(exports, "__esModule", {
 var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
+
+var _PositionProfileType_props = __webpack_require__(230);
+
+var _PositionProfileType_props2 = _interopRequireDefault(_PositionProfileType_props);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -803,6 +807,16 @@ function focusNode(node) {
 }
 
 module.exports = focusNode;
+
+/***/ }),
+
+/***/ 230:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+["profileName", "positionPeriod", "immediateStartIndicator", "positionScheduleTypeCodes", "shiftDescription", "offeredRemunerationPackage", "positionClassification", "attachments", "profileId", "alternateIds", "postingInstructions", "positionId", "positionTitle", "positionLocation", "positionOrganizations", "positionOpenQuantity", "jobCategories", "careerLevels", "positionOfferingTypes", "positionQualifications", "positionFormattedDescriptions", "searchCriteria", "searchOptimization", "travel", "workingLanguages"];
 
 /***/ }),
 
